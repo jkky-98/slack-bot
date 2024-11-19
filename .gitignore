@@ -1,0 +1,46 @@
+# macOS 시스템 파일
+.DS_Store
+
+# IntelliJ IDEA 프로젝트 파일
+*.iml
+.idea/
+out/
+
+# Maven / Gradle 빌드 디렉토리
+target/
+build/
+
+# 로그 파일
+*.log
+
+# 환경 설정 파일
+*.env
+.env.*
+application.yml
+*.yml
+
+# Node.js (만약 포함된다면)
+node_modules/
+npm-debug.log*
+
+# Java 클래스 파일
+*.class
+
+# 백업 파일
+*.bak
+*.swp
+*.tmp
+*.orig
+
+# 운영체제 임시 파일
+Thumbs.db
+desktop.ini
+
+# SSH 키
+*.pem
+*.key
+id_rsa
+id_rsa.pub
+
+# 기타 민감 정보
+slack-bot/src/main/resources/application.yml
