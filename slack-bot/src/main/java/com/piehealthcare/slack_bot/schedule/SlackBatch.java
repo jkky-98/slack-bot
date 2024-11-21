@@ -30,5 +30,6 @@ public class SlackBatch {
             utilService.sendSlackMessage(naverNewsApiDto.getOriginallink(), SlackChannelCostant.NEWS_CHANNEL);
         }
 
+
     }
 }
