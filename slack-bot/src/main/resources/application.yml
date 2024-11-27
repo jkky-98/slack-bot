@@ -1,2 +1,11 @@
 slack:
-  token: 입력하세요.
+  token: xxx
+server:
+  port: 8098
+
+spring:
+  datasource:
+    hikari:
+      connection-timezone: Asia/Seoul
+  jackson:
+    time-zone: "Asia/Seoul"

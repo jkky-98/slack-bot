@@ -21,15 +21,14 @@ public class SlackBatch {
     private final UtilService utilService;
     private final NaverAPI naverAPI;
 
-    @Scheduled(cron = "0 0/1 * * * *") // every 1 minutes
+    @Scheduled(cron = "0 0 9 * * *") // every 1 minutes
     public void batchTest() {
-        utilService.sendSlackMessage("테스트: 1분 간격 message 전송", SlackChannelCostant.NEWS_CHANNEL);
+        utilService.sendSlackMessage("테스트 :: 9시 뉴스 알람", SlackChannelCostant.NEWS_CHANNEL);
         List<NaverNewsApiDto> response = naverAPI.fetchNews();
 
         for (NaverNewsApiDto naverNewsApiDto : response) {
             utilService.sendSlackMessage(naverNewsApiDto.getOriginallink(), SlackChannelCostant.NEWS_CHANNEL);
         }
-
 
     }
 }
